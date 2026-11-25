@@ -83,7 +83,7 @@ A) Print every name in a list
 B) Add up every score in a list  
 C) Keep rolling a die until you get a 6  
 D) Count the vowels in a word\
-Answer is C\
+Answer is C
 
 **11.** (Code Tracing) What prints?
 ```python
@@ -92,7 +92,7 @@ for s in [80, 55, 90, 40]:
         break
     print(s)
 ```
-80\
+80
 
 
 **12.** (Code Tracing) What prints?
@@ -103,24 +103,24 @@ for s in [80, 55, 90, 40]:
     print(s)
 ```
 80\
-90\
+90
 
 ---
 
 ## Section C — Files
 
 **13.** (Short Answer) What does `with` guarantee when you open a file with `with open("data.txt") as f:`?\
-File is automatically closed when block ends\
+File is automatically closed when block ends
 
 **14.** (Code Tracing) What is the value?
 ```python
 line = "Bob,84\n"
 line.strip().split(",")
 ```
-['Bob', '84']\
+['Bob', '84']
 
 **15.** (Short Answer) Why do lines print with an extra blank line between them when you `print(line)` inside `for line in f:`?\
-Each line already has \n, print() adds another newline.\
+Each line already has \n, print() adds another newline.
 
 **16.** (Code Tracing) What prints if `missing.txt` doesn't exist?
 ```python

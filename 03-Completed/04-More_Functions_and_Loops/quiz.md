@@ -8,7 +8,10 @@ Try every question on your own first. The Answer Key is at the bottom, so don't 
 
 ## Section A — Function Extras
 
-**1.** (Code Tracing) What prints?
+**1.** (Code Tracing) What prints?\
+Hello, Ada!
+Hi, Ada!
+
 ```python
 def greet(name, greeting="Hello"):
     return f"{greeting}, {name}!"
@@ -17,9 +20,11 @@ print(greet("Ada"))
 print(greet("Ada", "Hi"))
 ```
 
-**2.** (True/False) `def f(a=1, b):` is a valid function definition.
+**2.** (True/False) `def f(a=1, b):` is a valid function definition.\
+False
 
-**3.** (Code Tracing) What prints?
+**3.** (Code Tracing) What prints?\
+Ben - Art
 ```python
 def describe(name, major="Undeclared"):
     return f"{name} — {major}"
@@ -27,7 +32,9 @@ def describe(name, major="Undeclared"):
 print(describe(major="Art", name="Ben"))
 ```
 
-**4.** (Short Answer) In `sorted(scores, reverse=True)`, what kind of argument is `reverse=True`, and what does that tell you about how `sorted` was written?
+
+**4.** (Short Answer) In `sorted(scores, reverse=True)`, what kind of argument is `reverse=True`, and what does that tell you about how `sorted` was written?\
+It is a keyword argument and tells us sorted has a parameter named reverse that has a default value.
 
 **5.** (Code Tracing) What prints?
 ```python
@@ -37,6 +44,7 @@ def low_high(nums):
 result = low_high([4, 8, 1])
 print(result)
 ```
+(1,8)
 
 **6.** (Code Tracing) What prints?
 ```python
@@ -48,14 +56,18 @@ def f():
 
 print(f(), x)
 ```
+100 5
 
-**7.** (Short Answer) Why should a function get its data through parameters instead of reading a global variable?
+**7.** (Short Answer) Why should a function get its data through parameters instead of reading a global variable?\
+Parameters make functions independent and reusable.
+
 
 ---
 
 ## Section B — While Loops
 
-**8.** (Short Answer) Name the three parts every `while` loop needs.
+**8.** (Short Answer) Name the three parts every `while` loop needs.\
+Initialization, a condition, and update
 
 **9.** (Code Tracing) What prints?
 ```python
@@ -64,12 +76,14 @@ while n < 20:
     n = n * 2
 print(n)
 ```
+32
 
 **10.** (Multiple Choice) Which situation is the best fit for a `while` loop?
 A) Print every name in a list  
 B) Add up every score in a list  
 C) Keep rolling a die until you get a 6  
-D) Count the vowels in a word
+D) Count the vowels in a word\
+Answer is C\
 
 **11.** (Code Tracing) What prints?
 ```python
@@ -78,6 +92,8 @@ for s in [80, 55, 90, 40]:
         break
     print(s)
 ```
+80\
+
 
 **12.** (Code Tracing) What prints?
 ```python
@@ -86,20 +102,25 @@ for s in [80, 55, 90, 40]:
         continue
     print(s)
 ```
+80\
+90\
 
 ---
 
 ## Section C — Files
 
-**13.** (Short Answer) What does `with` guarantee when you open a file with `with open("data.txt") as f:`?
+**13.** (Short Answer) What does `with` guarantee when you open a file with `with open("data.txt") as f:`?\
+File is automatically closed when block ends\
 
 **14.** (Code Tracing) What is the value?
 ```python
 line = "Bob,84\n"
 line.strip().split(",")
 ```
+['Bob', '84']\
 
-**15.** (Short Answer) Why do lines print with an extra blank line between them when you `print(line)` inside `for line in f:`?
+**15.** (Short Answer) Why do lines print with an extra blank line between them when you `print(line)` inside `for line in f:`?\
+Each line already has \n, print() adds another newline.\
 
 **16.** (Code Tracing) What prints if `missing.txt` doesn't exist?
 ```python
@@ -110,3 +131,5 @@ except FileNotFoundError:
     print("no file")
 print("done")
 ```
+no file\
+done
